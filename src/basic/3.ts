@@ -1,3 +1,8 @@
-let value: string | number;
+let mixedType: string | number;
+mixedType = "hello";
+mixedType = 8;
 
-let status: "enable" | "disable";
+type EnableOrDisable = "enable" | "disable";
+let answer: EnableOrDisable;
+answer = "enable";
+answer = "disable";

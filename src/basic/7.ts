@@ -1,15 +1,15 @@
-interface PageDetails {
+type Details = {
   createAt: Date;
   updateAt: Date;
-}
+};
 
-interface Page {
+type Page = {
   title: string;
   likes: number;
   accounts: string[];
   status: "open" | "close";
-  details?: PageDetails;
-}
+  details?: Details;
+};
 
 const page1: Page = {
   title: "The awesome page",
@@ -22,9 +22,13 @@ const page1: Page = {
   },
 };
 
+console.log(page1);
+
 const page2: Page = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
   status: "close",
 };
+
+console.log(page2);
